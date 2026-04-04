@@ -49,12 +49,17 @@ a {
   .portfolio-image-block {
   margin: 36px 0;
 }
-  .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-  margin: 40px 0;
+  .zoomable-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 30px auto;
+  cursor: zoom-in;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+  
   @media (max-width: 700px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
