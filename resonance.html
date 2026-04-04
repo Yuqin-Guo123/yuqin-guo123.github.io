@@ -59,7 +59,27 @@ a {
   cursor: zoom-in;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-  
+  .lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(40, 35, 38, 0.85);
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.lightbox.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 92vw;
+  max-height: 92vh;
+  border-radius: 14px;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+}
   @media (max-width: 700px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
@@ -137,6 +157,22 @@ The project also includes age-adaptive visual styles and wearable form variation
   </div>
 
 </div>
-  
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Expanded image">
+</div>
+
+<script>
+function openLightbox(img) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  lightboxImg.src = img.src;
+  lightbox.classList.add("show");
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("show");
+}
+</script>
 </body>
 </html>
