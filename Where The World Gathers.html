@@ -18,6 +18,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "TwCenCustom", Arial, sans-serif;
   background: #f3ecef;
@@ -49,6 +53,7 @@ h2 {
 }
 
 p {
+  margin-top: 0;
   margin-bottom: 22px;
 }
 
@@ -58,13 +63,8 @@ a {
   font-size: 15px;
 }
 
-.portfolio-grid {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
 .portfolio-image-block {
-  margin: 36px 0;
+  margin: 0;
   overflow: visible;
 }
 
@@ -74,21 +74,55 @@ a {
   height: auto;
   border-radius: 16px;
   display: block;
-  margin: 30px auto;
+  margin: 0 auto;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .zoomable-image:hover {
-  transform: scale(2.3);
+  transform: scale(1.35);
   box-shadow: 0 18px 60px rgba(0,0,0,0.25);
-  z-index: 10;
   position: relative;
+  z-index: 10;
+}
+
+/* Theme 整段下面开始用的左右布局 */
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.split-images {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.split-text {
+  max-width: 620px;
 }
 
 @media (hover: none) {
   .zoomable-image:hover {
     transform: none;
     box-shadow: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .split-section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .split-text {
+    max-width: 100%;
+  }
+
+  .zoomable-image {
+    max-width: 100%;
   }
 }
 
@@ -104,13 +138,9 @@ a {
   h2 {
     font-size: 19px;
   }
-
-  .zoomable-image {
-    max-width: 100%;
-    margin: 20px auto;
-  }
 }
 </style>
+  
 </head>
 
 <body>
@@ -135,29 +165,27 @@ Interaction is anchored through an Arduino controller and simple motion-based in
   <p>
     Life often moves through seasons of uncertainty and confusion, yet it is within that uncertainty that hope and connection quietly reappear. Utilizing the Penrose structure as its guiding visual and mechanical thread, the project aligns this emotional landscape with three interconnected scenes: an impossible geometric world that echoes confusion, a softened environment where sheep, flowers, and drifting fragments suggest renewed gentleness, and a final ascent along a staircase toward light—a quiet metaphor for clarity, elevation, and the search for one’s inner star. As players move through these segments, the shifting spaces mirror a passage from disorientation to understanding, from searching to a quiet kind of recognition.
   </p>
-  </div>
+</div>
   
-<div class="portfolio-grid">
-  <div class="portfolio-image-block">
-    <img src="images/rehabplay1.jpg" class="zoomable-image" alt="Rehabplay image 1">
+  <div class="split-section">
+  <div class="split-images">
+    <div class="portfolio-image-block">
+      <img src="images/rehabplay1.jpg" class="zoomable-image" alt="Project image 1">
+    </div>
+    <div class="portfolio-image-block">
+      <img src="images/rehabplay2.jpg" class="zoomable-image" alt="Project image 2">
+    </div>
+    <div class="portfolio-image-block">
+      <img src="images/rehabplay3.jpg" class="zoomable-image" alt="Project image 3">
+    </div>
   </div>
 
-  <div class="portfolio-image-block">
-    <img src="images/rehabplay2.jpg" class="zoomable-image" alt="Rehabplay image 2">
-  </div>
-
-  <div class="portfolio-image-block">
-    <img src="images/rehabplay3.jpg" class="zoomable-image" alt="Rehabplay image 3">
-  </div>
-
-  <div class="portfolio-image-block">
-    <img src="images/rehabplay4.jpg" class="zoomable-image" alt="Rehabplay image 4">
-  </div>
-
-  <div class="portfolio-image-block">
-    <img src="images/rehabplay5.jpg" class="zoomable-image" alt="Rehabplay image 5">
+  <div class="split-text">
+    <h2>Process</h2>
+    <p>这里放 Theme 底下开始的新文字内容。</p>
+    <p>右边这栏以后都可以继续加段落。</p>
   </div>
 </div>
-
+  
 </body>
 </html>
