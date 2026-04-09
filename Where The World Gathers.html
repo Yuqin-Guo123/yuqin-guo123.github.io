@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rehabplay | Yuqin Guo</title>
 
+<style>
+@font-face {
+  font-family: "BroadwayCustom";
+  src: url("./fonts/Broadway.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TwCenCustom";
+  src: url("./fonts/twcen.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "TwCenCustom", Arial, sans-serif;
+  background: #f3ecef;
+  color: #6d666b;
+  margin: 0;
+  padding: 40px;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.container {
+  max-width: 680px;
+  margin: auto;
+}
+
+h1 {
+  font-family: "BroadwayCustom", serif;
+  color: #7f6d7a;
+  font-size: 42px;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #a88f98;
+  margin-top: 6px;
+  margin-bottom: 28px;
+}
+
+p {
+  margin-bottom: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: #c58fa7;
+  font-size: 15px;
+}
+
+.portfolio-grid {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.portfolio-image-block {
+  margin: 36px 0;
+  overflow: visible;
+}
+
+.zoomable-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 30px auto;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.zoomable-image:hover {
+  transform: scale(2.3);
+  box-shadow: 0 18px 60px rgba(0,0,0,0.25);
+  z-index: 10;
+  position: relative;
+}
+
+@media (hover: none) {
+  .zoomable-image:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  .zoomable-image {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <a href="index.html">← Back to Home</a>
+
+  <h1>Where The World Gathers</h1>
+
+  <h2>An Interactive Game in Unity and VR</h2>
+
+  <p>
+    Where The World Gathers is a Unity-based digital art game that weaves spatial paradoxes, immersive interaction, and non-linear narration. Inspired by the gentle philosophy of The Little Prince, the project reflects on innocence, relationships, and the subtle moments that shape our experience of growing up. It invites players to look beyond the vastness of the cosmos and the strangeness of impossible geometry, and return to the question of what truly matters beneath it all.
+</p>
+  
+<p>
+Interaction is anchored through an Arduino controller and simple motion-based input, transforming physical gestures into measured steps across a virtual cosmos. A custom Google VR viewer adds a first-person layer of immersion, allowing players to step directly into a universe shaped by geometry, poetry, and reflection. In the end, The Astronaut’s Path offers a brief yet intimate voyage—an invitation to explore, to feel, and to return to the quiet place where our earliest sense of wonder still lives.
+  </p>
+</div>
+
+  <h2>Theme</h2>
+
+  <p>
+    Life often moves through seasons of uncertainty and confusion, yet it is within that uncertainty that hope and connection quietly reappear. Utilizing the Penrose structure as its guiding visual and mechanical thread, the project aligns this emotional landscape with three interconnected scenes: an impossible geometric world that echoes confusion, a softened environment where sheep, flowers, and drifting fragments suggest renewed gentleness, and a final ascent along a staircase toward light—a quiet metaphor for clarity, elevation, and the search for one’s inner star. As players move through these segments, the shifting spaces mirror a passage from disorientation to understanding, from searching to a quiet kind of recognition.
+  </p>
+  </div>
+  
+<div class="portfolio-grid">
+  <div class="portfolio-image-block">
+    <img src="images/rehabplay1.jpg" class="zoomable-image" alt="Rehabplay image 1">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/rehabplay2.jpg" class="zoomable-image" alt="Rehabplay image 2">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/rehabplay3.jpg" class="zoomable-image" alt="Rehabplay image 3">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/rehabplay4.jpg" class="zoomable-image" alt="Rehabplay image 4">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/rehabplay5.jpg" class="zoomable-image" alt="Rehabplay image 5">
+  </div>
+</div>
+
+</body>
+</html>
