@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cursed Planet | Yuqin Guo</title>
 
+<style>
+@font-face {
+  font-family: "BroadwayCustom";
+  src: url("./fonts/Broadway.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TwCenCustom";
+  src: url("./fonts/twcen.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "TwCenCustom", Arial, sans-serif;
+  background: #f3ecef;
+  color: #6d666b;
+  margin: 0;
+  padding: 40px;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.container {
+  max-width: 680px;
+  margin: auto;
+}
+
+h1 {
+  font-family: "BroadwayCustom", serif;
+  color: #7f6d7a;
+  font-size: 42px;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #a88f98;
+  margin-top: 6px;
+  margin-bottom: 28px;
+}
+
+p {
+  margin-bottom: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: #c58fa7;
+  font-size: 15px;
+}
+
+.portfolio-grid {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.portfolio-image-block {
+  margin: 36px 0;
+  overflow: visible;
+}
+
+.zoomable-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 30px auto;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.zoomable-image:hover {
+  transform: scale(2.3);
+  box-shadow: 0 18px 60px rgba(0,0,0,0.25);
+  z-index: 10;
+  position: relative;
+}
+
+@media (hover: none) {
+  .zoomable-image:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  .zoomable-image {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <a href="index.html">← Back to Home</a>
+
+  <h1>The Cursed Planet</h1>
+
+  <h2>An Interactive Game for Hand Rehabilitation</h2>
+
+  <p>
+    This project is a collaborative VR horror experience inspired by Lovecraftian cosmic horror, where players explore the ruins of an alien civilization through environmental clues and interactive artifacts. The experience guides users through fragmented spatial storytelling, gradually revealing the fate of the lost civilization while maintaining a strong atmosphere of uncertainty and psychological tension. I contributed to research, visual development, 2D illustration, 3D modeling, and art direction, designing symbolic artifacts and environmental elements that support narrative progression and player interaction. The project emphasizes the relationship between spatial exploration and narrative discovery, allowing players to reconstruct story fragments through embodied movement and object-based interaction.
+  </p>
+  
+  <p>
+    Through this project, I further developed my workflow across environmental storytelling, interactive prop design, and cross-media asset production for immersive VR experiences, while strengthening my ability to translate conceptual horror narratives into spatial and visual interaction systems.
+  </p>
+</div>
+
+<div class="portfolio-grid">
+  <div class="portfolio-image-block">
+    <img src="images/rehabplay1.jpg" class="zoomable-image" alt="Rehabplay image 1">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/rehabplay2.jpg" class="zoomable-image" alt="Rehabplay image 2">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/rehabplay3.jpg" class="zoomable-image" alt="Rehabplay image 3">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/rehabplay4.jpg" class="zoomable-image" alt="Rehabplay image 4">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/rehabplay5.jpg" class="zoomable-image" alt="Rehabplay image 5">
+  </div>
+</div>
+
+</body>
+</html>
