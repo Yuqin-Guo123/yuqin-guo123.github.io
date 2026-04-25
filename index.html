@@ -526,15 +526,20 @@ h1, h2 {
   </main>
 
   <footer>
-    <p>© 2026 Yuqin Guo. All rights reserved.</p>
-  </footer>
-  <img src="images/icecream.png" class="custom-cursor" id="cursor">
-
-
+  <p>© 2026 Yuqin Guo. All rights reserved.</p>
+</footer>
 
 <script>
+function scrollProjects(direction) {
+  const container = document.getElementById("projectsScroll");
+  const scrollAmount = container.clientWidth * 0.8;
 
+  container.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
+}
 </script>
-  
+
 </body>
 </html>
