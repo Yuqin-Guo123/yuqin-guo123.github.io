@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solana Hills | Yuqin Guo</title>
 
+<style>
+@font-face {
+  font-family: "BroadwayCustom";
+  src: url("./fonts/Broadway.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TwCenCustom";
+  src: url("./fonts/twcen.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "TwCenCustom", Arial, sans-serif;
+  background: #f3ecef;
+  color: #6d666b;
+  margin: 0;
+  padding: 40px;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.container {
+  max-width: 680px;
+  margin: auto;
+}
+
+h1 {
+  font-family: "BroadwayCustom", serif;
+  color: #7f6d7a;
+  font-size: 42px;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #a88f98;
+  margin-top: 6px;
+  margin-bottom: 28px;
+}
+
+p {
+  margin-bottom: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: #c58fa7;
+  font-size: 15px;
+}
+
+.portfolio-grid {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.portfolio-image-block {
+  margin: 36px 0;
+  overflow: visible;
+}
+
+.zoomable-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 30px auto;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.zoomable-image:hover {
+  transform: scale(2.3);
+  box-shadow: 0 18px 60px rgba(0,0,0,0.25);
+  z-index: 10;
+  position: relative;
+}
+
+@media (hover: none) {
+  .zoomable-image:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  .zoomable-image {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <a href="index.html">← Back to Home</a>
+
+  <h1>Solana Hills</h1>
+
+  <h2>A digital fashion project exploring wearable NFT assets</h2>
+
+  <p>
+    This project explores how digital fashion can function as a medium for virtual identity expression within emerging metaverse contexts. I designed a series of 3D garments and developed AR-based presentation scenarios to demonstrate how wearable digital assets can extend beyond static visualization into interactive spatial experiences. By integrating narrative styling, material experimentation, and environment-aware display strategies, the project reflects on the relationship between fashion, identity construction, and virtual presence in digital ecosystems.
+  
+  <p>
+    I developed a workflow for translating digital fashion concepts into NFT-ready visual assets and interactive presentation scenarios. The process strengthened my ability to connect garment modeling, material expression, and spatial display strategies, while exploring how wearable digital objects can function as expressive identity elements within virtual environments.
+  </p>
+</div>
+
+<div class="portfolio-grid">
+  <div class="portfolio-image-block">
+    <img src="images/cursedcover.png" class="zoomable-image" alt="cursed cover">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/cursed1.jpg" class="zoomable-image" alt="cursed image 1">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/cursed2.jpg" class="zoomable-image" alt="cursed image 2">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/cursed3.jpg" class="zoomable-image" alt="cursed image 3">
+  </div>
+
+  <div class="portfolio-image-block">
+    <img src="images/cursed4.jpg" class="zoomable-image" alt="cursed image 4">
+  </div>
+</div>
+
+</body>
+</html>
