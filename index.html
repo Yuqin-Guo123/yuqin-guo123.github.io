@@ -6,12 +6,20 @@
   <title>Yuqin Guo | Portfolio</title>
   <style>
 
-    @media (hover: hover) and (pointer: fine) {
-  body,
-  a,
-  button {
-    cursor: url("images/icecream.png") 16 16, auto;
+   @media (pointer: fine) {
+
+  body {
+    cursor: none;
   }
+
+  .custom-cursor {
+    position: fixed;
+    width: 100px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+
 }
     
 .projects-wrapper {
@@ -528,15 +536,22 @@ h1, h2 {
   <footer>
     <p>© 2026 Yuqin Guo. All rights reserved.</p>
   </footer>
-  <script>
-function scrollProjects(direction) {
-  const container = document.getElementById("projectsScroll");
-  const scrollAmount = container.clientWidth * 0.8;
-  container.scrollBy({
-    left: direction * scrollAmount,
-    behavior: "smooth"
+  <img src="images/icecream.png" class="custom-cursor" id="cursor">
+
+<img src="images/icecream.png" class="custom-cursor" id="cursor">
+
+<script>
+if (window.matchMedia("(pointer: fine)").matches) {
+
+  const cursor = document.getElementById("cursor");
+
+  document.addEventListener("mousemove", e => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
   });
+
 }
 </script>
+  
 </body>
 </html>
